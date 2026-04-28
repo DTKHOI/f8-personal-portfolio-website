@@ -5,7 +5,7 @@
     --column-size: 12;
     --spacing: 10px;
 
-    width: 100%;
+    width: 95%;
     margin-left: auto;
     margin-right: auto;
     padding-left: calc(var(--spacing) / 2);

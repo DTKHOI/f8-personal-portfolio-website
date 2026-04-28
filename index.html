@@ -48,62 +48,174 @@
     </head>
     <body>
         <header class="header">
-            <div class="header__inner">
-                <div class="header__mail-group">
-                    <div class="header__email-wrapper">
+            <div class="container">
+                <div class="row row-cols-lg-3 row-cols-2 header__inner">
+                    <div class="col">
+                        <div class="header__mail-group">
+                            <div class="header__email-wrapper">
+                                <img
+                                    src="./assets/img/email.svg"
+                                    alt=""
+                                    class="header__email-icon"
+                                />
+                            </div>
+                            <a
+                                href="mailto: hi@arif.interactive"
+                                class="hide-mobile header__email"
+                                >hi@arif.interactive</a
+                            >
+
+                            <!-- Header mobile -->
+                            <input
+                                hidden
+                                type="checkbox"
+                                id="header-mobile"
+                                name=""
+                            />
+                            <label
+                                for="header-mobile"
+                                class="hide-pc header-menu"
+                            >
+                                <div class="header-menu-line"></div>
+                                <div class="header-menu-line"></div>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="col order-top">
                         <img
-                            src="./assets/img/email.svg"
+                            src="./assets/img/memoji-boys.svg"
                             alt=""
-                            class="header__email-icon"
+                            class="header__memoji"
                         />
                     </div>
-                    <a
-                        href="mailto: hi@arif.interactive"
-                        class="hide-mobile header__email"
-                        >hi@arif.interactive</a
-                    >
 
-                    <!-- Header mobile -->
-                    <input hidden type="checkbox" id="header-mobile" name="" />
-                    <label for="header-mobile" class="hide-pc header-menu">
-                        <div class="header-menu-line"></div>
-                        <div class="header-menu-line"></div>
-                    </label>
+                    <div class="col">
+                        <nav class="hide-mobile navbar">
+                            <ul class="navbar-list">
+                                <li>
+                                    <a
+                                        href="#!"
+                                        class="content-desc navbar__link"
+                                        >Projects</a
+                                    >
+                                </li>
+                                <li>
+                                    <a
+                                        href="#!"
+                                        class="content-desc navbar__link"
+                                        >Journey</a
+                                    >
+                                </li>
+                                <li>
+                                    <a
+                                        href="#!"
+                                        class="content-desc navbar__link"
+                                        >Service</a
+                                    >
+                                </li>
+                                <li>
+                                    <a
+                                        href="#!"
+                                        class="content-desc navbar__link"
+                                        >Contact</a
+                                    >
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
                 </div>
-
-                <img
-                    src="./assets/img/memoji-boys.svg"
-                    alt=""
-                    class="header__memoji"
-                />
-
-                <nav class="hide-mobile navbar">
-                    <ul class="navbar-list">
-                        <li>
-                            <a href="#!" class="content-desc navbar__link"
-                                >Projects</a
-                            >
-                        </li>
-                        <li>
-                            <a href="#!" class="content-desc navbar__link"
-                                >Journey</a
-                            >
-                        </li>
-                        <li>
-                            <a href="#!" class="content-desc navbar__link"
-                                >Service</a
-                            >
-                        </li>
-                        <li>
-                            <a href="#!" class="content-desc navbar__link"
-                                >Contact</a
-                            >
-                        </li>
-                    </ul>
-                </nav>
             </div>
             <div class="hide-pc header-mobile-divider"></div>
         </header>
+
+        <main>
+            <section class="hero">
+                <div class="container">
+                    <div class="row-cols-lg-2 row-cols-1">
+                        <div class="hero__inner">
+                            <div class="col-lg-5 col-12">
+                                <figure class="hero__media">
+                                    <div class="hero__img-wrapper">
+                                        <img
+                                            src="./assets/img/hero-img.png"
+                                            alt=""
+                                            class="hero__img"
+                                        />
+                                        <img
+                                            src="./assets/img/hero-decor-1.png"
+                                            alt=""
+                                            class="hero__decor"
+                                        />
+                                    </div>
+                                </figure>
+                            </div>
+
+                            <div class="col-lg-6 col-12 order-top">
+                                <div class="hero__content">
+                                    <h1 class="hero__heading">
+                                        An Interactive Designer
+                                    </h1>
+                                    <p class="content-desc hero__desc">
+                                        Lorem ipsum dolor sit amet, consectetur
+                                        adipiscing elit. In urna, non nisl
+                                        tincidunt ut elementum turpis.
+                                    </p>
+                                    <div class="hero__cta">
+                                        <a href="#!" class="btn">Book a Call</a>
+                                        <a href="#!" class="hero__more"
+                                            >My Works</a
+                                        >
+                                    </div>
+                                    <div class="hero__socials">
+                                        <span class="content-desc hero__follow"
+                                            >Follow me on:</span
+                                        >
+                                        <div class="hero__social-row">
+                                            <a
+                                                href="#!"
+                                                class="hero__social-wrapper"
+                                            >
+                                                <img
+                                                    src="./assets/img/be.svg"
+                                                    alt="Be"
+                                                    class="hero__social"
+                                                />
+                                            </a>
+                                            <a
+                                                href="#!"
+                                                class="hero__social-wrapper"
+                                            >
+                                                <img
+                                                    src="./assets/img/hero-social.svg"
+                                                    alt=""
+                                                    class="hero__social"
+                                                />
+                                            </a>
+                                            <a
+                                                href="#!"
+                                                class="hero__social-wrapper"
+                                            >
+                                                <img
+                                                    src="./assets/img/instagram.svg"
+                                                    alt="instagram"
+                                                    class="hero__social"
+                                                />
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <img
+                    src="./assets/img/hero-decor-2.png"
+                    alt=""
+                    class="hide-mobile hero__content-decor"
+                />
+            </section>
+        </main>
     </body>
     <script src="./assets/animation/aos.js"></script>
     <script>

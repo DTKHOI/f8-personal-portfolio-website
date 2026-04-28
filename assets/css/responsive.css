@@ -3,6 +3,10 @@
     .hide-pc {
         display: none;
     }
+
+    .hero__content {
+        transform: translateX(-40px);
+    }
 }
 
 /* Tablet and Mobile */
@@ -25,9 +29,11 @@
         display: none;
     }
 
-    .header__inner {
-        justify-content: space-between;
-        padding: 0 8px;
+    /* .header__inner {
+        
+    } */
+    .header__mail-group {
+        justify-content: end;
     }
 
     .header-menu {
@@ -50,9 +56,9 @@
     }
 
     .header__memoji {
-        width: initial;
-        height: initial;
+        width: 70px;
         order: -1;
+        margin: 0;
     }
 
     .header-mobile-divider {
@@ -60,6 +66,40 @@
         height: 1.5px;
         background: #d6d3e2;
         margin: 0 auto;
-        margin-top: 15.5px;
+        margin-top: 10.5px;
+    }
+
+    .order-top {
+        order: -1;
+    }
+
+    .hero__inner {
+        flex-direction: column;
+        align-items: normal;
+    }
+
+    .hero__decor {
+        display: none;
+    }
+
+    .hero__heading {
+        width: 260px;
+        font-size: 4.2rem;
+        letter-spacing: -1.68px;
+        line-height: 1.19;
+    }
+
+    .hero__desc {
+        font-size: 1.6rem;
+        line-height: 1.62;
+    }
+
+    .hero__socials {
+        margin-top: 30px;
+    }
+
+    .hero__img {
+        width: 100%;
+        margin-top: 20px;
     }
 }
