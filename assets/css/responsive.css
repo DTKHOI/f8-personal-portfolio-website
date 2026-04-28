@@ -14,14 +14,52 @@
 
 /* Tablet */
 @media screen and (min-width: 768px) and (max-width: 991.98px) {
-    .hide-on-tablet {
+    .hide-tablet {
         display: none;
     }
 }
 
 /* Mobile */
 @media screen and (max-width: 767.98px) {
-    .hide-on-mobile {
+    .hide-mobile {
         display: none;
+    }
+
+    .header__inner {
+        justify-content: space-between;
+        padding: 0 8px;
+    }
+
+    .header-menu {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 46px;
+        height: 46px;
+        gap: 6px;
+        border-radius: 50%;
+        border: 1.5px solid rgba(93, 59, 238, 0.2);
+    }
+
+    .header-menu-line {
+        width: 15px;
+        height: 2px;
+        border-radius: 15px;
+        background: var(--tertiary-color);
+    }
+
+    .header__memoji {
+        width: initial;
+        height: initial;
+        order: -1;
+    }
+
+    .header-mobile-divider {
+        width: 98vw;
+        height: 1.5px;
+        background: #d6d3e2;
+        margin: 0 auto;
+        margin-top: 15.5px;
     }
 }

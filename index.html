@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Document</title>
+        <title>Portfolio</title>
 
         <!-- Favicon -->
         <link
@@ -46,5 +46,69 @@
         <!-- Responsive CSS -->
         <link rel="stylesheet" href="./assets/css/responsive.css" />
     </head>
-    <body></body>
+    <body>
+        <header class="header">
+            <div class="header__inner">
+                <div class="header__mail-group">
+                    <div class="header__email-wrapper">
+                        <img
+                            src="./assets/img/email.svg"
+                            alt=""
+                            class="header__email-icon"
+                        />
+                    </div>
+                    <a
+                        href="mailto: hi@arif.interactive"
+                        class="hide-mobile header__email"
+                        >hi@arif.interactive</a
+                    >
+
+                    <!-- Header mobile -->
+                    <input hidden type="checkbox" id="header-mobile" name="" />
+                    <label for="header-mobile" class="hide-pc header-menu">
+                        <div class="header-menu-line"></div>
+                        <div class="header-menu-line"></div>
+                    </label>
+                </div>
+
+                <img
+                    src="./assets/img/memoji-boys.svg"
+                    alt=""
+                    class="header__memoji"
+                />
+
+                <nav class="hide-mobile navbar">
+                    <ul class="navbar-list">
+                        <li>
+                            <a href="#!" class="content-desc navbar__link"
+                                >Projects</a
+                            >
+                        </li>
+                        <li>
+                            <a href="#!" class="content-desc navbar__link"
+                                >Journey</a
+                            >
+                        </li>
+                        <li>
+                            <a href="#!" class="content-desc navbar__link"
+                                >Service</a
+                            >
+                        </li>
+                        <li>
+                            <a href="#!" class="content-desc navbar__link"
+                                >Contact</a
+                            >
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="hide-pc header-mobile-divider"></div>
+        </header>
+    </body>
+    <script src="./assets/animation/aos.js"></script>
+    <script>
+        AOS.init({
+            once: false,
+        });
+    </script>
 </html>
