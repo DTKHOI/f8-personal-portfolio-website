@@ -213,3 +213,38 @@ a {
     transform: translateX(230%);
     width: 30%;
 }
+
+/* ----------------------------- Client ----------------------------- */
+.client {
+    margin-top: 100px;
+}
+
+.client__heading {
+    width: 252px;
+    color: var(--heading-color);
+    font-size: 4.2rem;
+    font-weight: 500;
+    line-height: 1.19;
+    letter-spacing: -1.68px;
+    position: relative;
+    /* display: flex; */
+}
+
+.client__heading::before {
+    content: "";
+    display: block;
+    background: var(--tertiary-color);
+    width: 86px;
+    height: 2px;
+    position: absolute;
+    top: 22px;
+    left: -99px;
+    margin-right: 13px;
+}
+
+.client__row {
+    margin-left: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    row-gap: 34px;
+}
