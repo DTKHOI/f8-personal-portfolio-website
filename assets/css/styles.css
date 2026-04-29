@@ -345,3 +345,77 @@ a {
     margin-top: 15px;
     max-width: 285px;
 }
+
+/* ----------------------------- Projects ----------------------------- */
+.projects {
+    background: var(--tertiary-color);
+    margin-top: 140px;
+    padding: 86px 0;
+}
+
+.projects__heading {
+    color: var(--secondary-color);
+    width: 468px;
+}
+
+.projects__desc {
+    color: var(--secondary-color);
+    width: 370px;
+    transform: translateX(28px);
+}
+
+.projects__list {
+    margin-top: 70px;
+    row-gap: 30px;
+}
+
+.projects__card {
+    padding: 24px 24px 24px 34px;
+    background: var(--secondary-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    z-index: 0;
+}
+
+.projects__img {
+    width: 246px;
+}
+
+.projects__card-desc {
+    margin-top: 10px;
+    width: 220px;
+    font-size: 1.6rem;
+    line-height: 1.44;
+}
+
+.projects__case {
+    display: block;
+    margin-top: 20px;
+    font-size: 1.8rem;
+    color: var(--heading-color);
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.67;
+    text-decoration: underline;
+}
+
+.projects__card-decor {
+    width: 76%;
+    position: absolute;
+    right: 0.2px;
+    top: -14px;
+    z-index: -1;
+}
+
+.projects__btn-row {
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+}
+
+.projects__btn {
+    background: var(--secondary-color);
+    color: var(--heading-color);
+}

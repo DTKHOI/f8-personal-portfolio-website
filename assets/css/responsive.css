@@ -15,6 +15,10 @@
     .client__row {
         margin-left: 20px;
     }
+
+    .projects__top {
+        align-items: center;
+    }
 }
 
 /* Tablet and Mobile */
