@@ -419,3 +419,207 @@ a {
     background: var(--secondary-color);
     color: var(--heading-color);
 }
+
+/* ----------------------------- Stats ----------------------------- */
+.stats {
+    margin-top: 140px;
+    background: linear-gradient(
+        to bottom,
+        var(--secondary-color) 42%,
+        var(--primary-color) 42%
+    );
+    padding-bottom: 74px;
+}
+
+.stats__label {
+    display: block;
+    color: #5d3bee;
+    font-size: 3.2rem;
+    font-weight: 500;
+    line-height: 1.25;
+    letter-spacing: -1.28px;
+    text-align: center;
+}
+
+.stats__label::after {
+    content: url(../img/waving-hand-memoji.svg);
+    margin-left: 9px;
+}
+
+.stats__heading {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.stats__desc {
+    width: 570px;
+    text-align: center;
+    margin: 15px auto 0;
+}
+
+.stats__row-inner {
+    margin-top: 70px;
+}
+
+.stats__row {
+    text-align: center;
+}
+
+.stats__row::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    background: rgb(8, 4, 21, 0.2);
+}
+
+.stats__row::after {
+    display: block;
+    content: "";
+    width: 100%;
+    height: 1.5px;
+    margin-top: 20px;
+    background: rgb(8, 4, 21, 0.2);
+}
+
+.stats__quantity {
+    display: block;
+    line-height: 1.35;
+    letter-spacing: 1.68px;
+    text-decoration: underline;
+}
+
+.stats__info {
+    margin-top: 20px;
+}
+
+.stats__watching {
+    margin-top: 70px;
+    position: relative;
+}
+
+.stats__video {
+    width: 100%;
+}
+
+.stats__watching-btn {
+    width: 111px;
+    height: 111px;
+    border-radius: 111px;
+    background: rgba(255, 255, 255, 0.7);
+    --webkit-backdrop-filter: blur(12px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 259px;
+    left: 50%;
+    transform: translateX(-50%);
+    cursor: pointer;
+}
+
+.stats__video-label {
+    background: var(--secondary-color);
+    color: var(--heading-color);
+    position: absolute;
+    right: 25px;
+    bottom: 12px;
+    cursor: pointer;
+}
+
+/* ----------------------------- Testimonial -----------------------------  */
+.testimonial {
+    margin-top: 150px;
+    text-align: center;
+}
+
+.testimonial__desc {
+    width: 570px;
+    margin: 15px auto 0;
+}
+
+.testimonial__group {
+    margin-top: 60px;
+}
+
+.testimonial__speech {
+    width: 679px;
+    margin: 0 auto;
+    color: #51586a;
+    font-size: 2.4rem;
+    font-weight: 400;
+    line-height: 1.67; /* 166.667% */
+}
+
+.testimonial__info {
+    margin-top: 36px;
+}
+
+.testimonial__info-inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.testimonial__avt-wrap {
+    width: 39.833px;
+    height: 39.833px;
+    border-radius: 50%;
+    background: #f29764;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.testimonial__avt {
+    width: 100%;
+    object-fit: cover;
+}
+
+.testimonial__info-desc {
+    color: #515f79;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.81;
+    margin-top: 3px;
+}
+
+.control-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.control-row {
+    margin: 40px auto 0;
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+.control-btn::after {
+    content: "";
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: rgba(8, 4, 21, 0.2);
+}
+
+.control-btn::before {
+    content: "";
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.control-btn:has(:checked)::before {
+    outline: 1.5px solid var(--tertiary-color);
+}
+
+.control-btn:has(:checked)::after {
+    transform: scale(75%);
+    background: var(--tertiary-color);
+}

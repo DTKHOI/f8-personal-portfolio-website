@@ -188,33 +188,8 @@
         display: flex;
     }
 
-    .control-btn {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
     .control-row {
-        margin: 0 auto;
         margin-top: 30px;
-        display: flex;
-        gap: 15px;
-    }
-
-    .control-btn::after {
-        content: "";
-        width: 16px;
-        height: 16px;
-        border-radius: 50%;
-        background: rgba(8, 4, 21, 0.2);
-    }
-
-    .control-btn::before {
-        content: "";
-        width: 20px;
-        height: 20px;
-        border-radius: 50%;
-        position: absolute;
     }
 
     #first:checked ~ .services__control .control-btn[for="first"]::after,
