@@ -7,6 +7,14 @@
     .hero__content {
         transform: translateX(-40px);
     }
+
+    .client__heading {
+        transform: translateX(100px);
+    }
+
+    .client__row {
+        margin-left: 20px;
+    }
 }
 
 /* Tablet and Mobile */
@@ -101,5 +109,50 @@
     .hero__img {
         width: 100%;
         margin-top: 20px;
+    }
+
+    .client__heading {
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .client__heading::before {
+        width: 48px;
+        position: relative;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .client__row {
+        margin-top: 42px;
+        grid-template-columns: repeat(2, max-content);
+        justify-content: center;
+    }
+
+    /* fix adobe and canva position */
+    .client__brand:nth-child(1),
+    .client__brand:nth-child(2) {
+        order: 1;
+    }
+
+    .client__brand:nth-child(5),
+    .client__brand:nth-child(6) {
+        order: 2;
+    }
+
+    .client__brand:nth-child(3),
+    .client__brand:nth-child(4) {
+        order: 3;
+    }
+
+    .client__brand:nth-child(7),
+    .client__brand:nth-child(8) {
+        order: 4;
+    }
+
+    .client__brand:nth-child(4),
+    .client__brand:last-child {
+        justify-self: center;
     }
 }
