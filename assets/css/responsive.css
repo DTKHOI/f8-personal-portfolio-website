@@ -155,4 +155,90 @@
     .client__brand:last-child {
         justify-self: center;
     }
+
+    .services {
+        margin-top: 120px;
+    }
+
+    .services__heading {
+        font-size: 3.6rem;
+        line-height: 1.17;
+        letter-spacing: -1.44px;
+    }
+
+    .services__desc {
+        font-size: 1.6rem;
+        line-height: 1.62;
+        max-width: 350px;
+    }
+
+    .services__list {
+        flex-wrap: nowrap;
+    }
+
+    .hide-horizontal-scrollbar {
+        overflow: hidden;
+    }
+
+    .services__control {
+        display: flex;
+    }
+
+    .control-btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .control-row {
+        margin: 0 auto;
+        margin-top: 30px;
+        display: flex;
+        gap: 15px;
+    }
+
+    .control-btn::after {
+        content: "";
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+        background: rgba(8, 4, 21, 0.2);
+    }
+
+    .control-btn::before {
+        content: "";
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        position: absolute;
+    }
+
+    #first:checked ~ .services__control .control-btn[for="first"]::after,
+    #second:checked ~ .services__control .control-btn[for="second"]::after,
+    #third:checked ~ .services__control .control-btn[for="third"]::after {
+        transform: scale(75%);
+        background: #5d3bee;
+    }
+
+    #first:checked ~ .services__control .control-btn[for="first"]::before,
+    #second:checked ~ .services__control .control-btn[for="second"]::before,
+    #third:checked ~ .services__control .control-btn[for="third"]::before {
+        outline: 1.5px solid #5d3bee;
+    }
+
+    .services__list {
+        transition: transform 0.3s;
+    }
+
+    #first:checked ~ .services__list {
+        transform: translateX(0);
+    }
+
+    #second:checked ~ .services__list {
+        transform: translateX(-100%);
+    }
+
+    #third:checked ~ .services__list {
+        transform: translateX(-200%);
+    }
 }

@@ -273,15 +273,75 @@ a {
 .client__brand:nth-child(3) .client__brand-wrapper {
     background: #fee101;
 }
+
 .client__brand:nth-child(4) .client__brand-wrapper {
     background: red;
 }
+
 .client__brand:nth-child(5) .client__brand-wrapper {
     background: #14a800;
 }
+
 .client__brand:nth-child(6) .client__brand-wrapper {
     background: white;
 }
+
 .client__brand:nth-child(7) .client__brand-wrapper {
     background: #7f54b3;
+}
+
+/* ----------------------------- Services ----------------------------- */
+.services {
+    margin-top: 133px;
+}
+
+.services__heading {
+    text-align: center;
+}
+
+.services__desc {
+    width: 534px;
+    padding-top: 20px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.services__list {
+    margin-top: 60px;
+}
+
+.services__card {
+    padding: 33px 43px;
+    background: var(--primary-color);
+}
+
+.services__icon-wrapper {
+    width: 74px;
+    height: 74px;
+    border-radius: 50%;
+    border: 1px solid rgba(8, 4, 21, 0.05);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.services___item:first-child .services__icon {
+    transform: translateY(10%);
+}
+
+.services___item:nth-child(2) .services__icon {
+    transform: translateY(15%);
+}
+
+.services___item:last-child .services__icon {
+    transform: translate(-6%, 15%);
+}
+
+.services__card-title {
+    margin-top: 22px;
+}
+
+.services__card-desc {
+    margin-top: 15px;
+    max-width: 285px;
 }
