@@ -91,10 +91,6 @@
         overflow: hidden;
     }
 
-    .hero__decor {
-        /* display: none; */
-    }
-
     .hero__heading {
         width: 260px;
         font-size: 4.2rem;
