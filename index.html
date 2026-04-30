@@ -770,13 +770,13 @@
                     <h2 class="heading faq__heading">
                         A few questions clients normally ask me
                     </h2>
-                    <input type="checkbox" name="expand" id="expand-1" />
-                    <input type="checkbox" name="expand" id="expand-2" />
-                    <input type="checkbox" name="expand" id="expand-3" />
-                    <input type="checkbox" name="expand" id="expand-4" />
-                    <input type="checkbox" name="expand" id="expand-5" />
-                    <ul class="faq__questionaire">
-                        <li class="row row-cols-2 faq__question">
+                    <input hidden type="checkbox" name="expand" id="expand-1" />
+                    <input hidden type="checkbox" name="expand" id="expand-2" />
+                    <input hidden type="checkbox" name="expand" id="expand-3" />
+                    <input hidden type="checkbox" name="expand" id="expand-4" />
+                    <input hidden type="checkbox" name="expand" id="expand-5" />
+                    <ul class="faq__questionaire row">
+                        <li class="col-lg-10 col row row-cols-2 faq__question">
                             <div class="col">
                                 <h3 class="title faq__title">
                                     What is your hourly rate?
@@ -794,12 +794,12 @@
                                 ></label>
                             </div>
                         </li>
-                        <li class="row row-cols-2 faq__question">
+                        <li class="col-lg-10 col row row-cols-2 faq__question">
                             <div class="col">
                                 <h3 class="title faq__title">
                                     What type of projects do you take on?
                                 </h3>
-                                <p hidden class="content-desc faq__desc">
+                                <p class="content-desc faq__desc">
                                     Lorem ipsum dolor sit amet, consectetur
                                     adipiscing elit. In urna, non nisl tincidunt
                                     ut elementum turpis.
@@ -812,12 +812,12 @@
                                 ></label>
                             </div>
                         </li>
-                        <li class="row row-cols-2 faq__question">
+                        <li class="col-lg-10 col row row-cols-2 faq__question">
                             <div class="col">
                                 <h3 class="title faq__title">
                                     How do you charge for projects ?
                                 </h3>
-                                <p hidden class="content-desc faq__desc">
+                                <p class="content-desc faq__desc">
                                     Lorem ipsum dolor sit amet, consectetur
                                     adipiscing elit. In urna, non nisl tincidunt
                                     ut elementum turpis.
@@ -830,12 +830,12 @@
                                 ></label>
                             </div>
                         </li>
-                        <li class="row row-cols-2 faq__question">
+                        <li class="col-lg-10 col row row-cols-2 faq__question">
                             <div class="col">
                                 <h3 class="title faq__title">
                                     What time-zone do you work in?
                                 </h3>
-                                <p hidden class="content-desc faq__desc">
+                                <p class="content-desc faq__desc">
                                     Lorem ipsum dolor sit amet, consectetur
                                     adipiscing elit. In urna, non nisl tincidunt
                                     ut elementum turpis.
@@ -848,12 +848,12 @@
                                 ></label>
                             </div>
                         </li>
-                        <li class="row row-cols-2 faq__question">
+                        <li class="col-lg-10 col row row-cols-2 faq__question">
                             <div class="col">
                                 <h3 class="title faq__title">
                                     How often can we communicate?
                                 </h3>
-                                <p hidden class="content-desc faq__desc">
+                                <p class="content-desc faq__desc">
                                     Lorem ipsum dolor sit amet, consectetur
                                     adipiscing elit. In urna, non nisl tincidunt
                                     ut elementum turpis.
@@ -953,54 +953,68 @@
         </main>
 
         <footer class="footer">
-            <div class="container-fluid footer__inner">
-                <div class="header__mail-group">
-                    <div class="header__email-wrapper">
+            <div class="container-fluid">
+                <div class="footer__inner row row-cols-lg-3 row-cols-1">
+                    <div class="col">
+                        <div class="header__mail-group">
+                            <div class="header__email-wrapper">
+                                <img
+                                    src="./assets/img/email.svg"
+                                    alt=""
+                                    class="header__email-icon"
+                                />
+                            </div>
+                            <a
+                                href="mailto: hi@arif.interactive"
+                                class="header__email"
+                                >hi@arif.interactive</a
+                            >
+                        </div>
+                    </div>
+
+                    <div class="col order-top">
                         <img
-                            src="./assets/img/email.svg"
+                            src="./assets/img/memoji-boys.svg"
                             alt=""
-                            class="header__email-icon"
+                            class="header__memoji"
                         />
                     </div>
-                    <a
-                        href="mailto: hi@arif.interactive"
-                        class="hide-mobile header__email"
-                        >hi@arif.interactive</a
-                    >
-                </div>
 
-                <div class="order-top">
-                    <img
-                        src="./assets/img/memoji-boys.svg"
-                        alt=""
-                        class="header__memoji"
-                    />
+                    <div class="col">
+                        <nav class="navbar">
+                            <ul class="navbar-list">
+                                <li>
+                                    <a
+                                        href="#!"
+                                        class="content-desc navbar__link"
+                                        >Projects</a
+                                    >
+                                </li>
+                                <li>
+                                    <a
+                                        href="#!"
+                                        class="content-desc navbar__link"
+                                        >Journey</a
+                                    >
+                                </li>
+                                <li>
+                                    <a
+                                        href="#!"
+                                        class="content-desc navbar__link"
+                                        >Service</a
+                                    >
+                                </li>
+                                <li>
+                                    <a
+                                        href="#!"
+                                        class="content-desc navbar__link"
+                                        >Contact</a
+                                    >
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
                 </div>
-
-                <nav class="navbar">
-                    <ul class="navbar-list">
-                        <li>
-                            <a href="#!" class="content-desc navbar__link"
-                                >Projects</a
-                            >
-                        </li>
-                        <li>
-                            <a href="#!" class="content-desc navbar__link"
-                                >Journey</a
-                            >
-                        </li>
-                        <li>
-                            <a href="#!" class="content-desc navbar__link"
-                                >Service</a
-                            >
-                        </li>
-                        <li>
-                            <a href="#!" class="content-desc navbar__link"
-                                >Contact</a
-                            >
-                        </li>
-                    </ul>
-                </nav>
             </div>
 
             <div class="footer__separate"></div>
