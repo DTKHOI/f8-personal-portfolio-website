@@ -508,16 +508,16 @@ a {
 .stats__watching-btn {
     width: 111px;
     height: 111px;
-    border-radius: 111px;
+    border-radius: 50%;
     background: rgba(255, 255, 255, 0.7);
     --webkit-backdrop-filter: blur(12px);
     display: flex;
     align-items: center;
     justify-content: center;
     position: absolute;
-    top: 259px;
+    top: 50%;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translate(-50%, -50%);
     cursor: pointer;
 }
 
@@ -656,10 +656,6 @@ a {
     width: 575px;
 }
 
-/* .faq__question {
-    align-items: start;
-} */
-
 .faq__question + .faq__question {
     margin-top: 60px;
 }
@@ -745,7 +741,6 @@ a {
     .faq__question:nth-child(5)
     .faq__expand {
     border-color: rgba(93, 59, 238, 0.2);
-    content: "-";
 }
 
 #expand-1:checked

@@ -296,4 +296,202 @@
     .projects__btn-row {
         margin-top: 50px;
     }
+
+    /* Stats */
+    .stats {
+        margin-top: 120px;
+    }
+
+    .stats__label {
+        font-size: 2rem;
+        line-height: 2;
+        letter-spacing: -0.8px;
+    }
+
+    .stats__heading {
+        font-size: 3.6rem;
+        font-weight: 500;
+        line-height: 1.167;
+        letter-spacing: -1.44px;
+        margin: 10px auto 0;
+    }
+
+    .stats__desc {
+        width: 350px;
+        font-size: 1.6rem;
+        font-weight: 400;
+        line-height: 1.625;
+        margin: 20px auto 0;
+    }
+
+    .stats__row-inner {
+        margin-top: 50px;
+    }
+
+    .stats__row {
+        text-align: initial;
+    }
+
+    .stats__quantity {
+        font-size: 3rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 1.4;
+        letter-spacing: 0.9px;
+    }
+
+    .stats__info {
+        margin-top: 30px;
+    }
+
+    .stats__info-desc {
+        font-size: 1.6rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 1.375;
+        text-align: left;
+        display: block;
+        margin-top: 5px;
+    }
+
+    .stats__row::after {
+        margin-top: 30px;
+    }
+
+    .stats__watching {
+        margin-top: 40px;
+    }
+
+    .stats__video {
+        display: block;
+        height: 276px;
+        object-fit: cover;
+    }
+
+    .stats__watching-btn {
+        width: 77px;
+        height: 77px;
+    }
+
+    .stats__video-label {
+        --btn-height: 44px;
+        font-size: 1.2rem;
+        font-style: normal;
+        font-weight: 700;
+        width: 118px;
+        max-width: 118px;
+        bottom: 10px;
+        right: 15px;
+    }
+
+    /* Testimonial */
+    .testimonial {
+        margin-top: 121px;
+    }
+
+    .testimonial__heading {
+        font-size: 3.6rem;
+        font-weight: 500;
+        line-height: 1.167;
+        letter-spacing: -1.44px;
+    }
+
+    .testimonial__desc {
+        width: 100%;
+        font-size: 1.6rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 1.375;
+    }
+
+    .testimonial__speech {
+        font-size: 1.8rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 1.67; /* 166.667% */
+        width: 100%;
+        margin-top: 40px;
+    }
+
+    .testimonial__info {
+        margin-top: 40px;
+    }
+
+    /* FAQ */
+    .faq {
+        margin-top: 120px;
+    }
+
+    .faq__heading {
+        font-size: 3.6rem;
+        font-weight: 500;
+        line-height: 1.167;
+        letter-spacing: -1.44px;
+        width: 86%;
+    }
+
+    .faq__title {
+        font-size: 2.4rem;
+        font-weight: 500;
+        line-height: 1.41;
+        letter-spacing: -0.96px;
+    }
+
+    .faq__desc {
+        font-size: 1.6rem;
+        line-height: 1.625;
+        width: 100%;
+    }
+
+    .faq__question + .faq__question {
+        margin-top: 40px;
+    }
+
+    .faq__question::after {
+        margin-top: -68px;
+    }
+
+    .faq__control {
+        align-items: baseline;
+    }
+
+    .faq__expand {
+        width: 33px;
+        height: 33px;
+    }
+
+    .faq__expand::after {
+        font-size: 2rem;
+    }
+
+    #expand-1:checked
+        ~ .faq__questionaire
+        .faq__question:nth-child(1)
+        .faq__desc,
+    #expand-2:checked
+        ~ .faq__questionaire
+        .faq__question:nth-child(2)
+        .faq__desc,
+    #expand-3:checked
+        ~ .faq__questionaire
+        .faq__question:nth-child(3)
+        .faq__desc,
+    #expand-4:checked
+        ~ .faq__questionaire
+        .faq__question:nth-child(4)
+        .faq__desc,
+    #expand-5:checked
+        ~ .faq__questionaire
+        .faq__question:nth-child(5)
+        .faq__desc {
+        margin-top: 0px;
+    }
+
+    #expand-1:checked ~ .faq__questionaire .faq__question:nth-child(1)::after,
+    #expand-2:checked ~ .faq__questionaire .faq__question:nth-child(2)::after,
+    #expand-3:checked ~ .faq__questionaire .faq__question:nth-child(3)::after,
+    #expand-4:checked ~ .faq__questionaire .faq__question:nth-child(4)::after,
+    #expand-5:checked ~ .faq__questionaire .faq__question:nth-child(5)::after {
+        margin-top: 15px;
+    }
 }
