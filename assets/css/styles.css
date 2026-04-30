@@ -428,6 +428,10 @@ a {
         var(--secondary-color) 42%,
         var(--primary-color) 42%
     );
+    position: relative;
+}
+
+.stats__container {
     padding-bottom: 74px;
 }
 
@@ -527,6 +531,21 @@ a {
     cursor: pointer;
 }
 
+.stats-page-decor {
+    position: absolute;
+    bottom: 0;
+}
+
+.stats__decor-left {
+    width: 16%;
+    left: 0;
+}
+
+.stats__decor-right {
+    right: 0;
+    width: 18%;
+}
+
 /* ----------------------------- Testimonial -----------------------------  */
 .testimonial {
     margin-top: 150px;
@@ -623,3 +642,76 @@ a {
     transform: scale(75%);
     background: var(--tertiary-color);
 }
+
+/* ----------------------------- FAQ ----------------------------- */
+.faq {
+    margin-top: 95px;
+}
+
+.faq__questionaire {
+    margin-top: 80px;
+}
+
+.faq__heading {
+    width: 575px;
+}
+
+.faq__question {
+    align-items: start;
+}
+
+.faq__question + .faq__question {
+    margin-top: 60px;
+    align-items: end;
+}
+
+.faq__question:first-child .faq__title {
+    color: var(--tertiary-color);
+}
+
+.faq__desc {
+    margin-top: 23px;
+    width: 487px;
+}
+
+.faq__question::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1.5px;
+    margin-top: 21px;
+    background: var(--heading-color);
+}
+
+.faq__question + .faq__question::after {
+    margin-top: 33px;
+}
+
+.faq__expand {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid rgba(93, 59, 238, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    cursor: pointer;
+}
+
+.faq__expand::after {
+    content: "+";
+    display: block;
+    color: black;
+    font-size: 3rem;
+    position: absolute;
+}
+
+.faq__control {
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* Expand feature... */
+
+/* ----------------------------- Atmosphere ----------------------------- */
