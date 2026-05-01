@@ -526,4 +526,51 @@
     .atmosphere__tabs {
         margin-top: 40px;
     }
+
+    /* CTA */
+    .cta {
+        margin-top: 120px;
+        overflow: hidden;
+    }
+
+    .cta__inner {
+        padding-top: 35px;
+        padding-bottom: 35px;
+    }
+
+    .cta__memmoji {
+        width: 40px;
+        height: 40px;
+    }
+
+    .cta__heading {
+        font-size: 3.6rem;
+        font-weight: 500;
+        line-height: 1.167;
+        letter-spacing: -1.44px;
+        width: 66%;
+        margin: 10px auto 0;
+    }
+
+    .cta__desc {
+        width: 92%;
+        font-size: 1.6rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 1.625;
+    }
+
+    .cta__btn {
+        width: 147px;
+        max-width: 147px;
+        --btn-height: 55px;
+        font-size: 1.6rem;
+        font-weight: 700;
+    }
+
+    .cta__decor-3 {
+        top: 0%;
+        left: 41%;
+        width: 164%;
+    }
 }
