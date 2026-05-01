@@ -443,25 +443,18 @@
         width: 100%;
     }
 
-    .faq__question + .faq__question {
-        margin-top: 40px;
-    }
-
-    .faq__question::after {
-        margin-top: -68px;
-    }
-
-    .faq__control {
-        align-items: baseline;
-    }
-
     .faq__expand {
         width: 33px;
         height: 33px;
+        margin-top: 3px !important;
     }
 
     .faq__expand::after {
         font-size: 2rem;
+    }
+
+    .faq__question::after {
+        margin-top: 15px !important;
     }
 
     #expand-1:checked
@@ -484,14 +477,6 @@
         ~ .faq__questionaire
         .faq__question:nth-child(5)
         .faq__desc {
-        margin-top: 0px;
-    }
-
-    #expand-1:checked ~ .faq__questionaire .faq__question:nth-child(1)::after,
-    #expand-2:checked ~ .faq__questionaire .faq__question:nth-child(2)::after,
-    #expand-3:checked ~ .faq__questionaire .faq__question:nth-child(3)::after,
-    #expand-4:checked ~ .faq__questionaire .faq__question:nth-child(4)::after,
-    #expand-5:checked ~ .faq__questionaire .faq__question:nth-child(5)::after {
         margin-top: 15px;
     }
 }

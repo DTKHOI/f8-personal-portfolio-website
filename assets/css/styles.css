@@ -656,14 +656,33 @@ a {
     width: 575px;
 }
 
+.faq__title {
+    transition: all 0.6s;
+}
+
 .faq__question + .faq__question {
     margin-top: 60px;
 }
 
+.faq__desc-inner {
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: all 0.4s;
+}
+
+/* Chú ý: do sử dụng scaleY thì nhìn ngoài thị giác thì thẻ p bị xẹp đi nhưng cái xác p vẫn nằm trong luồng
+    đọc file -> thẻ p vẫn có chiều cao bằng với chiều cao nội dung trong đó (content trong box model).
+    Giải pháp: tạo một container bọc ngoài p, sử dụng display: grid và grid-template-rows: 0fr lúc ẩn nội 
+    dung. Lúc này container sẽ ép lại phần xác của thẻ p -> giải quyết được content trong box model. 
+*/
+
 .faq__desc {
     width: 487px;
-    transform: scaleY(0);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-20px);
     transform-origin: top;
+    overflow: hidden;
     transition: all 0.4s;
 }
 
@@ -672,7 +691,7 @@ a {
     display: block;
     width: 100%;
     height: 1.5px;
-    margin-top: -11px;
+    margin-top: 11px;
     background: var(--heading-color);
     transition: all 0.4s;
 }
@@ -680,6 +699,7 @@ a {
 .faq__expand {
     width: 50px;
     height: 50px;
+    margin-top: 12px;
     border-radius: 50%;
     border: 2px solid rgba(22, 26, 28, 0.2);
     display: flex;
@@ -687,7 +707,7 @@ a {
     justify-content: center;
     position: relative;
     cursor: pointer;
-    transition: all 0.2s;
+    transition: all 0.4s;
 }
 
 .faq__expand::after {
@@ -700,9 +720,8 @@ a {
 }
 
 .faq__control {
-    display: flex;
-    justify-content: flex-end;
-    align-items: anchor-center;
+    justify-items: flex-end;
+    padding-right: 0px !important;
 }
 
 /* Expand feature... */
@@ -714,13 +733,38 @@ a {
     color: var(--tertiary-color);
 }
 
+#expand-1:checked
+    ~ .faq__questionaire
+    .faq__question:nth-child(1)
+    .faq__desc-inner,
+#expand-2:checked
+    ~ .faq__questionaire
+    .faq__question:nth-child(2)
+    .faq__desc-inner,
+#expand-3:checked
+    ~ .faq__questionaire
+    .faq__question:nth-child(3)
+    .faq__desc-inner,
+#expand-4:checked
+    ~ .faq__questionaire
+    .faq__question:nth-child(4)
+    .faq__desc-inner,
+#expand-5:checked
+    ~ .faq__questionaire
+    .faq__question:nth-child(5)
+    .faq__desc-inner {
+    grid-template-rows: 1fr;
+}
+
 #expand-1:checked ~ .faq__questionaire .faq__question:nth-child(1) .faq__desc,
 #expand-2:checked ~ .faq__questionaire .faq__question:nth-child(2) .faq__desc,
 #expand-3:checked ~ .faq__questionaire .faq__question:nth-child(3) .faq__desc,
 #expand-4:checked ~ .faq__questionaire .faq__question:nth-child(4) .faq__desc,
 #expand-5:checked ~ .faq__questionaire .faq__question:nth-child(5) .faq__desc {
     margin-top: 23px;
-    transform: scaleY(1);
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0px);
 }
 
 #expand-1:checked ~ .faq__questionaire .faq__question:nth-child(1)::after,
@@ -741,6 +785,7 @@ a {
     .faq__question:nth-child(5)
     .faq__expand {
     border-color: rgba(93, 59, 238, 0.2);
+    margin-top: 35px;
 }
 
 #expand-1:checked
