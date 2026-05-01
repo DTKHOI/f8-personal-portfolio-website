@@ -83,11 +83,13 @@
                     </div>
 
                     <div class="col order-top">
-                        <img
-                            src="./assets/img/memoji-boys.svg"
-                            alt=""
-                            class="header__memoji"
-                        />
+                        <a href="#">
+                            <img
+                                src="./assets/img/memoji-boys.svg"
+                                alt=""
+                                class="header__memoji"
+                            />
+                        </a>
                     </div>
 
                     <div class="col">
@@ -644,7 +646,7 @@
                             class="stats__row-inner col-lg-10 col-12 offset-lg-1"
                         >
                             <ul class="stats__row row row-cols-3">
-                                <li class="col stats__info offset">
+                                <li class="col-3 stats__info">
                                     <span>
                                         <strong class="stats__quantity heading"
                                             >08+</strong
@@ -654,7 +656,7 @@
                                         >Years Experience</span
                                     >
                                 </li>
-                                <li class="col stats__info">
+                                <li class="col-3 stats__info">
                                     <span>
                                         <strong class="stats__quantity heading"
                                             >21+</strong
@@ -664,7 +666,7 @@
                                         >Features & Awards</span
                                     >
                                 </li>
-                                <li class="col stats__info">
+                                <li class="col-3 stats__info">
                                     <span>
                                         <strong class="stats__quantity heading"
                                             >97%</strong
@@ -1037,8 +1039,8 @@
         <footer class="footer">
             <div class="container-fluid">
                 <div class="footer__inner row row-cols-lg-3 row-cols-1">
-                    <div class="col">
-                        <div class="header__mail-group">
+                    <div class="col footer__mail">
+                        <div class="footer__mail-group header__mail-group">
                             <div class="header__email-wrapper">
                                 <img
                                     src="./assets/img/email.svg"
@@ -1055,14 +1057,16 @@
                     </div>
 
                     <div class="col order-top">
-                        <img
-                            src="./assets/img/memoji-boys.svg"
-                            alt=""
-                            class="header__memoji"
-                        />
+                        <a href="#">
+                            <img
+                                src="./assets/img/memoji-boys.svg"
+                                alt=""
+                                class="footer__emoji header__memoji"
+                            />
+                        </a>
                     </div>
 
-                    <div class="col">
+                    <div class="col footer__nav">
                         <nav class="navbar">
                             <ul class="navbar-list">
                                 <li>
@@ -1099,9 +1103,10 @@
                 </div>
             </div>
 
-            <div class="footer__separate"></div>
+            <div class="footer__separate hide-mobile"></div>
 
-            <div class="container">
+            <!-- PC footer-bottom -->
+            <div class="container hide-mobile">
                 <div class="footer__bottom">
                     <p class="footer__copyright content-desc">
                         ©interactiveArif 2026. All rights reserved.
@@ -1114,6 +1119,28 @@
                             >Terms of Conditions</span
                         >
                     </div>
+                </div>
+            </div>
+
+            <!-- Mobile footer-bottom -->
+            <div class="footer__mobile-bottom">
+                <div class="footer__mobile-policy order-top hide-pc">
+                    <span class="content-desc footer__policy"
+                        >Privacy Policy</span
+                    >
+                    <span class="content-desc footer__terms"
+                        >Terms of Conditions</span
+                    >
+                </div>
+
+                <div
+                    class="footer__mobile-separate hide-pc footer__separate"
+                ></div>
+
+                <div class="hide-pc footer__mobile-copyright">
+                    <p class="content-desc">
+                        ©interactiveArif 2026. All rights reserved.
+                    </p>
                 </div>
             </div>
         </footer>

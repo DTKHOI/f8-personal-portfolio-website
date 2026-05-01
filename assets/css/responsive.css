@@ -115,8 +115,14 @@
     }
 
     .hero__img {
-        width: 100%;
+        width: 68%;
         margin-top: 20px;
+    }
+
+    .hero__decor {
+        top: -9%;
+        left: -22%;
+        width: 155%;
     }
 
     /* Client */
@@ -330,6 +336,7 @@
 
     .stats__row {
         text-align: initial;
+        margin-top: 30px;
     }
 
     .stats__quantity {
@@ -338,10 +345,6 @@
         font-weight: 500;
         line-height: 1.4;
         letter-spacing: 0.9px;
-    }
-
-    .stats__info {
-        margin-top: 30px;
     }
 
     .stats__info-desc {
@@ -428,6 +431,10 @@
         line-height: 1.167;
         letter-spacing: -1.44px;
         width: 86%;
+    }
+
+    .faq__questionaire {
+        margin-top: 42px;
     }
 
     .faq__title {
@@ -572,5 +579,46 @@
         top: 0%;
         left: 41%;
         width: 164%;
+    }
+
+    /* Footer */
+    .footer {
+        margin-top: 120px;
+    }
+
+    .footer__emoji {
+        margin: 0 auto;
+        width: 100px;
+    }
+
+    .footer__mail-group {
+        justify-self: center;
+    }
+
+    .footer__nav {
+        order: 0;
+        margin-top: 20px;
+    }
+
+    .footer__mail {
+        order: 1;
+        margin-top: 58px;
+    }
+
+    .footer__mobile-bottom {
+        width: 100%;
+        padding: 0;
+        margin-top: 57px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer__mobile-separate {
+        width: 100%;
+    }
+
+    .footer__mobile-policy,
+    .footer__mobile-copyright {
+        margin: 0 auto;
     }
 }

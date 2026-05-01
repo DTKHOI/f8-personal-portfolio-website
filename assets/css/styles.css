@@ -13,7 +13,6 @@ label {
 
 body {
     background: white;
-    height: 10000px;
 }
 
 a {
@@ -466,6 +465,7 @@ a {
 
 .stats__row {
     text-align: center;
+    justify-content: space-between;
 }
 
 .stats__row::before {
@@ -904,7 +904,7 @@ a {
 
 .cta__decor-3 {
     inset: 0 0 0 50%;
-    width: 56%;
+    width: 55.9%;
     transform: translateX(-50%);
 }
 
