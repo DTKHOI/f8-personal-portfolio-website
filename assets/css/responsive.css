@@ -88,6 +88,7 @@
         transform: translateX(-100%);
         border: 1.5px solid rgba(81, 88, 106, 0.2);
         transition: all 0.4s;
+        overflow-y: hidden;
     }
 
     #header-mobile:checked ~ .menu-overlay {
@@ -134,10 +135,7 @@
         letter-spacing: -0.15px;
     }
 
-    .menu-email,
-    .menu-mail,
-    .menu-tel,
-    .menu-address {
+    .menu-email {
         display: block;
         font-size: 1.2rem;
         font-style: normal;
@@ -163,21 +161,6 @@
         display: flex;
         flex-direction: column;
         padding: 12px 0;
-    }
-
-    .menu-divider {
-        margin-top: 190%;
-        width: 100%;
-        height: 1.5px;
-        border-radius: 8px;
-        background: rgba(81, 88, 106, 0.2);
-    }
-
-    .menu-mail,
-    .menu-tel,
-    .menu-address {
-        padding: 8px 0;
-        color: var(--content-color);
     }
 
     .header-menu-line {
