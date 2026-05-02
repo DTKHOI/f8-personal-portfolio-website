@@ -51,7 +51,7 @@
 
     /* Header */
     .header {
-        padding-top: 20px;
+        top: -15px;
     }
 
     .header__mail-group {
